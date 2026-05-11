@@ -14,7 +14,15 @@ export default function PackageCard({ tour, romantic = false }) {
     >
       <Link to={`/destinations/${tour.slug}`} className="block">
         <div className="relative h-72 overflow-hidden bg-mist">
-          <img src={tour.image} alt={tour.title} className="h-full w-full object-cover transition duration-700 group-hover:scale-110" loading="lazy" />
+          <img
+            src={tour.image}
+            alt={tour.title}
+            className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+            loading="lazy"
+            onError={(event) => {
+              event.currentTarget.src = "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=85";
+            }}
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/78 via-transparent to-transparent" />
           <div className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-extrabold text-navy backdrop-blur">
             {tour.category}

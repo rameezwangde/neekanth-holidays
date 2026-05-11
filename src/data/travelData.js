@@ -62,7 +62,7 @@ export const internationalTours = [
     duration: "5N / 6D",
     rating: "4.5",
     category: "International",
-    image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f11?auto=format&fit=crop&w=1200&q=85",
+    image: "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=85",
     description: "City lights, island escapes, shopping avenues, rainforests, and cultural food trails.",
     overview: "A Malaysia holiday that blends Kuala Lumpur's city icons with nature, shopping, and easy family-friendly activities.",
     itinerary: ["Arrival in Kuala Lumpur", "City tour", "Genting or Batu Caves", "Leisure and shopping", "Optional island extension", "Departure"],
